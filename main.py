@@ -38,7 +38,7 @@ profit = 0
 def sufficient_resources(ingredients):
     for item in ingredients:
         if ingredients[item] > resources[item]:
-            print("Sorry. There isn't enough ingredients. ")
+            print(f"Sorry. There isn't enough {item}. ")
             return False
     return True
 
